@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Buttons styles */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input[type="submit"].btn, input[type="submit"].coupon_button2,
+button.btn,
+button.coupon_button2 {
+  cursor: pointer;
+}
+
+a.btn, a.coupon_button2, .btn, .coupon_button2 {
+  margin-right: 1em;
+  /* remove this while use*/
+  margin-bottom: 1em;
+  /* remove this while use*/
+  display: inline-block;
+  outline: none;
+  *zoom: 1;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 300;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  border: 1px solid;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
+}
+
+/* Radius */
+.btn-radius {
+  -moz-border-radius: 3px;
+       border-radius: 3px;
+}
+
+/* Sizes */
+.btn-small {
+  font-size: 0.8125em;
+  padding: 0.4125em 1.25em;
+}
+
+.btn-medium {
+  font-size: 0.9375em;
+  padding: 0.5375em 1.375em;
+}
+
+.btn-large, .coupon_button2 {
+  font-size: 1.0625em;
+  padding: 0.5625em 1.5em;
+}
+
+/* Colors */
+.btn-green {
+  color: #3CB371;
+  border-color: #3CB371;
+}
+
+.btn-green:hover {
+  background: #3CB371;
+  color: #fff;
+  border-color: #3CB371;
+}
+
+.btn-blue, .coupon_button2 {
+  color: #4682B4;
+  border-color: #4682B4;
+}
+
+.btn-blue:hover, .coupon_button2:hover, .coupon_button .coupon_button:hover {
+  background: #4682B4;
+  color: #fff;
+  border-color: #4682B4;
+}
+
+.btn-orange {
+  color: #FF8C00;
+  border-color: #FF8C00;
+}
+
+.btn-orange:hover {
+  background: #FF8C00;
+  color: #fff;
+  border-color: #FF8C00;
+}
+
+.btn-red {
+  color: #B22222;
+  border-color: #B22222;
+}
+
+.btn-red:hover {
+  background: #B22222;
+  color: #fff;
+  border-color: #B22222;
+}
+
+.btn-gray {
+  color: #808080;
+  border-color: #808080;
+}
+
+.btn-gray:hover {
+  background: #808080;
+  color: #fff;
+  border-color: #808080;
+}
+
+body {
+  background: #812E23;
+}
+
+#content {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  padding: 50px;
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+
+#coupon_detail {
+  margin-top: 30px;
+}
+
+.coupon_image_article {
+  position: relative;
+  z-index: 50;
+  font-size: 20pt;
+  color: #fff;
+  top: 300px;
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.coupon_image_barcode {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  display: table;
+  margin-left: 350px;
+  text-align: center;
+  z-index: 50;
+  top: 150px;
+}
+
+.coupan_content {
+  position: relative;
+  top: 0px;
+}
+
+#coupon_image {
+  position: relative;
+}
+
+#coupon_image img {
+  width: 100%;
+  height: auto;
+}
+
+.coupon_button2 {
+  background: #fff;
+}
+
+.coupon_button {
+  font-size: 15pt;
+  display: block;
+}
+
+.coupon_button::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.coupon_button input[type="file"] {
+  font-size: 15pt;
+}
+
+#coupon_maker {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.button_left {
+  float: left;
+}
+
+.button_right {
+  float: right;
+}
+
+#myFile {
+  color: #fff;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  background: #4682B4;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=index.css.map */

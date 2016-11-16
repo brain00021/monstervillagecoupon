@@ -1,0 +1,88 @@
+@import "reset.sass";
+@import "brain_plugin";
+@import "flat_button";
+body {
+    background: #812E23;
+}
+
+#content {
+    @include size(100%, auto);
+    max-width: 900px;
+    padding: 50px;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+
+#coupon_detail {
+    margin-top: 30px;
+}
+
+.coupon_image_article{
+    position: relative;
+    z-index: 50;
+    font-size: 20pt;
+    color:#fff;
+    top:300px;
+    display: table;
+    text-align: center;
+    margin: 0 auto;}
+.coupon_image_barcode{
+    @include size(200px,auto);
+    position: absolute;
+    display: table;
+    margin-left: 350px;
+    text-align: center;
+    z-index: 50;
+    top:150px;
+}
+.coupan_content{
+    position: relative;
+    top:0px;
+}
+#coupon_image {
+    position: relative;
+    img {
+        @include size(100%, auto);
+    }
+}
+
+.coupon_button2 {
+    @extend .btn;
+    @extend .btn-large;
+    @extend .btn-blue;
+    background: #fff;
+}
+
+.coupon_button {
+    font-size: 15pt;
+    display: block;
+    @include clearfix;
+    .coupon_button:hover {
+        @extend .btn-blue:hover;
+    }
+    input[type="file"] {
+        font-size: 15pt;
+    }
+}
+
+#coupon_maker {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.button_left {
+    float: left;
+}
+
+.button_right {
+    float: right;
+}
+
+#myFile {
+    color: #fff;
+    padding: 20px;
+    @include size(auto, auto);
+    background: #4682B4;
+    vertical-align: middle;
+}
